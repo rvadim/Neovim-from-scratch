@@ -10,10 +10,6 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Lexplore --
-keymap("", "<c-e>", ":Lexplore 30<cr>", opts)
-keymap("", "<>", "", opts)
-
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -75,3 +71,5 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<c-f>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
+-- nvim-tree --
+keymap("n", "<c-e>", ":NvimTreeToggle<cr>", opts)
