@@ -19,6 +19,11 @@ vim.cmd [[
     autocmd FileType markdown setlocal spell
   augroup end
 
+  augroup _yaml
+    autocmd!
+    autocmd BufNewFile,BufRead *.yaml.j2 set filetype=yaml
+  augroup end
+
   augroup _auto_resize
     autocmd!
     autocmd VimResized * tabdo wincmd = 
