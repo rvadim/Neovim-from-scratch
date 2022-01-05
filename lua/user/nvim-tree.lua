@@ -78,7 +78,7 @@ nvim_tree.setup {
     timeout = 500,
   },
   view = {
-    width = 30,
+    width = 50,
     height = 30,
     hide_root_folder = false,
     side = "left",
@@ -100,7 +100,7 @@ nvim_tree.setup {
   },
   quit_on_open = 0,
   git_hl = 1,
-  disable_window_picker = 0,
+  disable_window_picker = 1,
   root_folder_modifier = ":t",
   show_icons = {
     git = 1,
